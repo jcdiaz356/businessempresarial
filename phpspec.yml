@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Businessempresarial
+        psr4_prefix: Businessempresarial
+        src_path: app
