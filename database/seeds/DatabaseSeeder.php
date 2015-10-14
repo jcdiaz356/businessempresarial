@@ -17,18 +17,12 @@ class DatabaseSeeder extends Seeder {
 
 		// $this->call('UserTableSeeder');
 
-		$this->call('CategoryTableSeeder');
+		$this->call(CategoriesTableSeeder::class);
 		$this->command->info('User table seeded!');
+		$this->call(EditionsTableSeeder::class);
+//		$this->command->info('User table seeded!');
+		Model::reguard();
 	}
 
 }
 
-class CategoryTableSeeder extends Seeder {
-
-	public function run()
-	{
-		DB::table('categories')->delete();
-		Category::create(['email' => 'foo@bar.com']);
-	}
-
-}

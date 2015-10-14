@@ -1,5 +1,7 @@
 <?php namespace Businessempresarial\Http\Controllers;
 
+use Businessempresarial\Note;
+
 class HomeController extends Controller {
 
 	/*
@@ -22,7 +24,17 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+
+		//$notes = Note::all();
+		$notes = Note::with('category')->get();
+		//return $notes;
+
+
+		//dd($notes->get(1));
+		//dd($notes);
+
+		//$notes = [$note];
+		return view('home',['notes'=>$notes]);
 	}
 
 }

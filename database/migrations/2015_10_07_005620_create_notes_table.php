@@ -22,8 +22,8 @@ class CreateNotesTable extends Migration {
 			$table->char('state');
 			$table->integer('category_id')->unsigned() ;
 			$table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-			$table->integer('editions_id')->unsigned() ;
-			$table->foreign('editions_id')->references('id')->on('editions')->onDelete('cascade');
+			$table->integer('edition_id')->unsigned() ;
+			$table->foreign('edition_id')->references('id')->on('editions')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}

@@ -12,3 +12,7 @@
 */
 
 Route::get('/','HomeController@index');
+Route::get('notes/{id}','NotesController@show');
+
+
+//Route::get('{name}','NotesController@show');
