@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Businessempresarial.net</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('apple-touch-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('apple-touch-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('apple-touch-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('apple-touch-icon-152x152.png')}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('favicon-32x32.png') }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ asset('android-chrome-192x192.png') }}" sizes="192x192">
+    <link rel="icon" type="image/png" href="{{ asset('favicon-96x96.png') }}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ asset('favicon-16x16.png') }}" sizes="16x16">
+    <link rel="manifest" href="{{ asset('manifest.json') }}">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ asset('mstile-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesheet.min.css"/>
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/stylesheet.min.css') }}"/>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -46,9 +46,11 @@
                 <div class="fecha">
                     LIMA, LUNES 31 DE AGOSTO DEL 2015
                 </div>
-                <!--nombre de ediciÛn-->
+                <!--nombre de edici√≥n-->
                 <div class="edicion">
-                    EDICI”N 417 DE BUSINESS EMPRESARIAL DEL 31 DE AGOSTO AL 6 DE SEPTIEMBRE DEL 2015
+                    EDICI√ìN 417 DE BUSINESS EMPRESARIAL DEL 31 DE AGOSTO AL 6 DE SEPTIEMBRE DEL 2015
+
+                    Educaci√≥n Per√∫
                 </div>
                 <!--REDES SOCIALES-->
                 <div class="social">
@@ -106,10 +108,10 @@
                             <li><a href="#">MOVIDA EMPRESARIAL</a></li>
                             <li><a href="#">AGENDA& PUBLICACIONES</a></li>
                             <li><a href="#">MODA & BELLEZA</a></li>
-                            <li><a href="#">EDICI”N IMPRESA</a></li>
+                            <li><a href="#">EDICI√≥N IMPRESA</a></li>
                             <li><a href="#">EDICIONES ANTERIORES</a></li>
                             <li><a href="#">VIDEOS</a></li>
-                            <li><a href="#">CONT¡CTENOS</a></li>
+                            <li><a href="#">CONT√ÅCTENOS</a></li>
 
                         </ul>
 
@@ -128,28 +130,24 @@
 <section>
     @yield('content')
 </section>
-
 <!--FOOTER-->
 <footer>
     <div class="container">
         <p class="pt pb">
-            www.businessempresarial.net es una publicaciÛn de V & W Comunicadores Asociados SRL. <br/>
-            No est· afiliada a ninguna instituciÛn gubernamental, sino es una entidad comercial. <br/>
-            Todos los derechos reservados Æ 2010
+            www.businessempresarial.net es una publicaci√≥n de V & W Comunicadores Asociados SRL. <br/>
+            No est√° afiliada a ninguna instituci√≥n gubernamental, sino es una entidad comercial. <br/>
+            Todos los derechos reservados ¬Æ 2010
         </p>
     </div>
 </footer>
-
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="lib/jquery.min.js"></script>
-
-<script type="text/javascript" src="js/scrollspy.min.js"></script>
-<script type="text/javascript" src="js/dropdown.min.js"></script>
-<script type="text/javascript" src="js/collapse.min.js"></script>
-<script type="text/javascript" src="js/tooltip.min.js"></script>
+<script src="{{ asset('lib/jquery.min.js') }}l"></script>
+<script type="text/javascript" src="{{ asset('js/scrollspy.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/dropdown.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/collapse.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/tooltip.min.js') }}"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script>
     $('#carrusel-empresas').carousel({
         interval: 4000
@@ -159,7 +157,6 @@
         interval: 3000
 
     });
-
 
     $('.nota-resumen-mini').hover(function(){
         $(this).find('.carousel-caption').stop().animate({top: 0});

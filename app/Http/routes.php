@@ -12,7 +12,9 @@
 */
 
 Route::get('/','HomeController@index');
-Route::get('notes/{id}','NotesController@show');
+//Route::get('notes/{id}','NotesController@show');
+Route::get('notes/{id}',['uses'=>'NotesController@show',
+                            'as'=> 'note_show_path']);
 
 
 //Route::get('{name}','NotesController@show');
