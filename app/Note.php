@@ -11,7 +11,7 @@ class Note extends Model {
     }
 
 
-    // Una Nota pertenece a una edición
+    // Una Nota pertenece a una ediciÃ³n
     public function edition() {
         return $this->belongsTo(Edition::class,'edition_id');
     }
@@ -27,6 +27,12 @@ class Note extends Model {
     public function medias(){
         return $this->hasMany(Media::class);
 
+    }
+
+
+    // results in a "problem", se examples below
+    public function medias_available() {
+        return $this->medias()->where('state','=', 1);
     }
 
 }

@@ -18,8 +18,8 @@ class CreateMediaTable extends Migration {
 			$table->string('file',255);
 			$table->integer('type');
 			$table->char('state');
-			$table->integer('notes_id')->unsigned() ;
-			$table->foreign('notes_id')->references('id')->on('notes')->onDelete('cascade');
+			$table->integer('note_id')->unsigned() ;
+			$table->foreign('note_id')->references('id')->on('notes')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}

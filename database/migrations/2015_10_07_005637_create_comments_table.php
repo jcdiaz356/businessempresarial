@@ -18,8 +18,8 @@ class CreateCommentsTable extends Migration {
 			$table->string('email',255);
 			$table->text('comment');
 			$table->char('state');
-			$table->integer('notes_id')->unsigned() ;
-			$table->foreign('notes_id')->references('id')->on('notes')->onDelete('cascade');
+			$table->integer('note_id')->unsigned() ;
+			$table->foreign('note_id')->references('id')->on('notes')->onDelete('cascade');
 			$table->timestamps();
 		});
 	}

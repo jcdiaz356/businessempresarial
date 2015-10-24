@@ -128,7 +128,13 @@
 </header>
 <!--CUERPO-->
 <section>
-    @yield('content')
+    <div class="container">
+        <div class="row pb">
+            @yield('content')
+            {{--COLUMNA RIGHT PUBLICITIES--}}
+            @include('boxes.right')
+        </div>
+    </div>
 </section>
 <!--FOOTER-->
 <footer>
@@ -141,7 +147,7 @@
     </div>
 </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="{{ asset('lib/jquery.min.js') }}l"></script>
+<script type="text/javascript" src="{{ asset('lib/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/scrollspy.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/dropdown.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/collapse.min.js') }}"></script>
