@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-md-12">
                 <!--LOGOTIPO-->
-                <a class="logo" href="{{ route('home') }}" title="Businessempresarial">
+                <a class="logo" href="http://www.businessempresarial.net" title="Businessempresarial">
                 </a>
                 <!--fecha-->
                 <div class="fecha">
@@ -100,35 +100,7 @@
                         <!--<a class="navbar-brand" href="#">Brand</a>-->
                     </div>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="@if ($activeMenu  == 0) {{ "active" }}  @endif"><a href="{{ route('home') }}">PORTADA <span class="sr-only">(current)</span></a></li>
-                            @foreach($categories as $index => $category)
-                                @if($category->id == 15)
-                                    {{--<li class=" @if ($activeMenu  == $category->id) {{ "active" }}  @endif "><a href="https://www.youtube.com/channel/UCtsfwh7xqO8eRqhNFbtA-ZQ" target="_blank">{{ $category->name }}</a></li>--}}
-                                    <li class=" @if ($activeMenu  == $category->id) {{ "active" }}  @endif "><a href="{{ route('video_show_path',[$edition[0]->id,$category->id]) }}">{{ $category->name }}</a></li>
-                                @elseif($category->id == 16)
-                                    <li class=" @if ($activeMenu  == $category->id) {{ "active" }}  @endif "><a href="{{ route('contact',[$edition[0]->id,$category->id]) }}">{{ $category->name }}</a></li>
-                                @elseif($category->id == 13)
-                                        <li class=" @if ($activeMenu  == $category->id) {{ "active" }}  @endif "><a href="{{ route('note_editions_anteriores_show_path',[$edition[0]->id,$category->id]) }}">{{ $category->name }}</a></li>
-                                @elseif($category->id == 10)
-                                    <li class=" @if ($activeMenu  == $category->id) {{ "active" }}  @endif "><a href="{{ route('note_publication_agenda_show_path',[$edition[0]->id,$category->id]) }}"> Agenda y publicaciones</a></li>
-                                @elseif($category->id == 14)
 
-                                @elseif($category->id == 12)
-                                    <li class=" @if ($activeMenu  == $category->id) {{ "active" }}  @endif "><a href="http://www.businessempresarial.net/edicion_impresa/index.html" target="_blank">{{ $category->name }}</a></li>
-                                @else
-                                    <li class=" @if ($activeMenu  == $category->id) {{ "active" }}  @endif "><a href="{{ route('category_show_path',[$edition[0]->id,$category->id]) }}">{{ $category->name }}</a></li>
-                                @endif
-                            @endforeach
-
-
-                        </ul>
-
-
-                    </div>
-                    <!-- /.navbar-collapse -->
 
                 </nav>
 
@@ -159,7 +131,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Publicidad 1-->
                 <div class="row">
                     <div class="col-md-12">
@@ -168,64 +139,11 @@
                                 <h4>PUBLICIDAD</h4>
                             </div>
                             <div>
-                                {{------------------------------------Publicidad -------------------------------------}}
-                                {{--<a href="http://www.mitsubishi-motors.com.pe" target="_blank">{!! Html::image('media/publicity/mitsu_328x352.gif','',array('class' => 'img-responsive img-publicidad')) !!}</a>--}}
-                                <a href="http://www.ipae.pe/" target="_blank">{!! Html::image('media/publicity/ipae-v.jpg','',array('class' => 'img-responsive img-publicidad')) !!}</a>
+                                <a href="http://www.mitsubishi-motors.com.pe" target="_blank"> {!! Html::image('media/publicity/mitsu_328x352.gif','',array('class' => 'img-responsive img-publicidad')) !!} </a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Publicidad 1-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="nota-resumen">
-                            <div class="title">
-                                <h4>PUBLICIDAD</h4>
-                            </div>
-                            <div>
-                                {{------------------------------------Publicidad -------------------------------------}}
-                                {{--<a href="http://www.mitsubishi-motors.com.pe" target="_blank">{!! Html::image('media/publicity/mitsu_328x352.gif','',array('class' => 'img-responsive img-publicidad')) !!}</a>--}}
-                                <a href="http://www.sheratonlima.com/es" target="_blank">{!! Html::image('media/publicity/sheraton-328px-x-325px.gif','',array('class' => 'img-responsive img-publicidad')) !!}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- Publicidad 1-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="nota-resumen">
-                            <div class="title">
-                                <h4>PUBLICIDAD</h4>
-                            </div>
-                            <div>
-                                {{------------------------------------Publicidad -------------------------------------}}
-                                {{--<a href="http://www.mitsubishi-motors.com.pe" target="_blank">{!! Html::image('media/publicity/mitsu_328x352.gif','',array('class' => 'img-responsive img-publicidad')) !!}</a>--}}
-                                <a href="http://www.natura.com.pe/portal-maquillaje/?utm_source=businessempresarial&utm_campaign=BCUNA&utm_medium=banner" target="_blank">{!! Html::image('media/publicity/328x352.gif','',array('class' => 'img-responsive img-publicidad')) !!}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Publicidad 1-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="nota-resumen">
-                            <div class="title">
-                                <h4>PUBLICIDAD</h4>
-                            </div>
-                            <div>
-                                {{------------------------------------Publicidad -------------------------------------}}
-                                {{--<a href="http://www.mitsubishi-motors.com.pe" target="_blank">{!! Html::image('media/publicity/mitsu_328x352.gif','',array('class' => 'img-responsive img-publicidad')) !!}</a>--}}
-                                <a href="http://www.belmond.com/es/miraflores-park-lima/meetings_and_events_lima" target="_blank">{!! Html::image('media/publicity/belmond_Banner_Business_Empresarial_328x352.gif','',array('class' => 'img-responsive img-publicidad')) !!}</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
                 <!-- Publicidad 1-->
                 <div class="row">
                     <div class="col-md-12">

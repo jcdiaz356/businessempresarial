@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.editionsPrevious')
 
 @section('scriptSocial')
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e4da40b4ac4de57" async="async"></script>

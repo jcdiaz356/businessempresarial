@@ -16,6 +16,8 @@ class AppServiceProvider extends ServiceProvider {
 
 	}
 
+
+
 	/**
 	 * Register any application services.
 	 *
@@ -27,14 +29,26 @@ class AppServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
+
+		/**
+		 * solo para publicar en hosting
+		 */
+//		$this->app->bind('path.public', function() {
+//			return base_path().'/public_html/website/';
+//		});
+
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
 			'Businessempresarial\Services\Registrar'
 		);
 
+
+
 		if ($this->app->environment() == 'local') {
 			$this->app->register('Laracasts\Generators\GeneratorsServiceProvider');
 		}
+
+		//dd(public_path('something'));
 	}
 
 
