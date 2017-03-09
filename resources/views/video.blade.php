@@ -42,7 +42,7 @@
                                         <div class="embed-responsive embed-responsive-16by9">
 
 
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zHWSWjY6L1U" allowfullscreen></iframe>
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vWQwforrKuw" allowfullscreen></iframe>
 
 
                                         </div>
@@ -55,7 +55,7 @@
                                     <div class="col-md-12 pb">
                                         <div class="embed-responsive  embed-responsive-16by9">
 
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f_liV1AJY7s" allowfullscreen></iframe>
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u3PlyGbOgFk" allowfullscreen></iframe>
 
 
 
@@ -66,6 +66,30 @@
                             </div>
                         </div>
 
+
+                        <div class="row pt pb">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 pb">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zHWSWjY6L1U" allowfullscreen></iframe>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 pb">
+                                        <div class="embed-responsive  embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f_liV1AJY7s" allowfullscreen></iframe>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
 
                         <div class="row pt pb">
                             <div class="col-md-6">
@@ -77,37 +101,13 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12 pb">
-                                        <div class="embed-responsive  embed-responsive-16by9">
+                                        <div class="embed-responsive embed-responsive-16by9">
                                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iFBMr1Crc_w-4" allowfullscreen></iframe>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="row pt pb">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-12 pb">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vQ5JvRbq5" allowfullscreen></iframe>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-12 pb">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y-jc6irnD8k" allowfullscreen></iframe>
 
 
                                             </div>
@@ -123,7 +123,7 @@
                                     <div class="col-md-12 pb">
 
                                         <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jpVnkmwzJRU" allowfullscreen></iframe>
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vQ5JvRbq5" allowfullscreen></iframe>
 
                                         </div>
                                     </div>
@@ -135,7 +135,7 @@
                                     <div class="col-md-12 pb">
                                         <div class="embed-responsive embed-responsive-16by9">
                                            {{--SIN VIDEO--}}
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oT0mHvJFXDQ" allowfullscreen></iframe>
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y-jc6irnD8k" allowfullscreen></iframe>
 
 
                                         </div>
